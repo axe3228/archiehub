@@ -31,9 +31,9 @@ const project = () => {
             <div className="flex flex-wrap justify-evenly">
                 <Card image="/images/projects/harmony-web.png" title="Harmony Web" desc="create at Cogitate (2023-2024)" 
                 url="https://harmonyschoolsonlinestore.com/district-office/central-office" />
-                <Card image="/images/projects/partner-sync-hub.png" title="Partner Sync Hub" desc="create at Cogitate (2024)" url="https://simplewaste.com/" />
-                <Card image="/images/projects/htsweb.png" title="HTS Tech" desc="create at Cogitate (2024)" url="" />
-                <Card image="/images/projects/simplewaste.png" title="Onboarding Portal" desc="create at Cogitate (2023)" url="https://simplewaste.com/" />
+                <Card image="/images/projects/partnersync-hub.png" title="Partner Sync Hub" desc="create at Cogitate (2024)" url="https://simplewaste.com/" />
+                <Card image="/images/projects/hts-tech.png" title="HTS Tech" desc="create at Cogitate (2024)" url="" />
+                <Card image="/images/projects/simple-waste.png" title="Onboarding Portal" desc="create at Cogitate (2023)" url="https://simplewaste.com/" />
             </div>
         </div>
     );
