@@ -26,7 +26,7 @@ const Contact = () => {
     
         // Example of form submission handling
         try {
-          const response = await fetch('/api/email', {
+          const response = await fetch('https://archiehub.vercel.app/api/email', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -49,7 +49,6 @@ const Contact = () => {
         } catch (error) {
           setStatus('An error occurred.');
         }
-        console.log('result: ', formData);
     };
 
     return (
