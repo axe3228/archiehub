@@ -40,7 +40,7 @@ const About = () => {
                         With a background in both front-end and back-end development, I specialize in crafting seamless web experiences 
                         using the latest technologies. Over the past five years, I&#39;ve worked with a range of clients to build responsive, 
                         performance-driven sites and applications. My skill set includes expertise in HTML, CSS, JavaScript, and popular 
-                        frameworks like React and Node.js.
+                        frameworks like Next.js and Angular.js.
                     </p>
                     <p>
                         I believe in a user-centered approach, focusing on delivering clean, intuitive designs and efficient code. My commitment 
