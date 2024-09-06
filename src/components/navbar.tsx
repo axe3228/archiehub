@@ -12,7 +12,15 @@ const Navbar = () => {
     return (
         <nav className="flex justify-between items-center w-full py-5 sticky top-0 bg-black shadow-md z-50 relative
         md:border-b-0 border-b md:px-0 px-6">
-            <a href={HOME_PAGE} className="font-bold text-[18px]">ArchieHub</a>
+            <a href={HOME_PAGE} className="flex items-end">
+                <Image
+                    src={"/icons/a.png"}
+                    alt={"Logo"}
+                    width={29}
+                    height={29}
+                />
+                <p className="font-bold text-[18px] leading-[17px]">rchieHub</p>
+            </a>
             <button className="flex md:hidden" onClick={() => setIsOpen(!isOpen)}>
                 <Image
                     src={"/icons/hamburger.png"}
