@@ -59,7 +59,8 @@ const About = () => {
                 <div className="space-y-3 mt-6">
                     <p className="font-bold">What i know: </p>
                     <div className="flex items-center flex-wrap">
-                        <Badge title='GIT' src='/icons/about/devicon_git.png' bgc='bg-[#F05033]'/>
+                        <Badge title='HTML' src='/icons/about/html.png' bgc='bg-[#e34c26]'/>
+                        <Badge title='CSS' src='/icons/about/css.png' bgc='bg-[#2965f1]'/>
                         <Badge title='TYPESCRIPT' src='/icons/about/typescript.png' bgc='bg-[#007ACC]'/>
                         <Badge title='JAVASCRIPT' src='/icons/about/javascript.png' bgc='bg-[#323330]'/>
                         <Badge title='PHP' src='/icons/about/php.png' bgc='bg-[#777BB4]'/>
@@ -76,6 +77,7 @@ const About = () => {
                         <Badge title='HEROKU' src='/icons/about/heroku.png' bgc='bg-[#430098]'/>
                         <Badge title='FIREBASE' src='/icons/about/firebase.png' bgc='bg-[#0718AC]'/>
                         <Badge title='MYSQL' src='/icons/about/mysql.png' bgc='bg-[#D16400]'/>
+                        <Badge title='GIT' src='/icons/about/devicon_git.png' bgc='bg-[#F05033]'/>
                     </div>
                 </div>
             </div>

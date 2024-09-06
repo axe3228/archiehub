@@ -28,12 +28,17 @@ const project = () => {
 
     return (
         <div className="pt-8 pb-5 px-6">
+            <h1 className="font-montez text-[45px] mb-5">Big projects that i participated:</h1>
             <div className="flex flex-wrap justify-evenly">
-                <Card image="/images/projects/harmony-web.png" title="Harmony Web" desc="create at Cogitate (2023-2024)" 
+                <Card image="/images/projects/harmony-web.png" title="Harmony Web" desc="@ Cogitate (2024)" 
                 url="https://harmonyschoolsonlinestore.com/district-office/central-office" />
-                <Card image="/images/projects/partnersync-hub.png" title="Partner Sync Hub" desc="create at Cogitate (2024)" url="https://simplewaste.com/" />
-                <Card image="/images/projects/hts-tech.png" title="HTS Tech" desc="create at Cogitate (2024)" url="" />
-                <Card image="/images/projects/simple-waste.png" title="Onboarding Portal" desc="create at Cogitate (2023)" url="https://simplewaste.com/" />
+                <Card image="/images/projects/partnersync-hub.png" title="Partner Sync Hub" desc="@ Cogitate (2024)" url="https://simplewaste.com/" />
+                <Card image="/images/projects/hts-tech.png" title="HTS Tech" desc="@ Cogitate (2024)" url="" />
+                <Card image="/images/projects/simple-waste.png" title="Onboarding Portal" desc="@ Cogitate (2023)" url="https://simplewaste.com/" />
+                <Card image="/images/projects/cogitate.png" title="Cogitate" desc="@ Cogitate (2023)" url="https://www.cogitate.io/" />
+                <Card image="/images/projects/growforwardjp.png" title="Grow Forward JP Inc." desc="@ Grow Forward JP Inc. (2021)" url="https://growforwardjp.com/" />
+                <Card image="/images/projects/negumjp.png" title="Negum" desc="@ Grow Forward JP Inc. (2021)" url="https://negum-jp.com/" />
+                <Card image="/images/projects/negum-tempo-jp.png" title="Negum Tempo" desc="@ Grow Forward JP Inc. (2021)" url="https://negum-tenpo.com/" />
             </div>
         </div>
     );
