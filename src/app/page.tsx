@@ -9,8 +9,11 @@ export default function Home() {
             your ideal website come to life.</p>
             </div>
             <a href="https://docs.google.com/document/d/1boujWVDvDs20n-3M0_d_Gy2gscNFxuzeQt5OjL8cPr0/edit?usp=sharing" target="_blank"
-            className="inline-block bg-white text-black font-bold px-5 py-2.5 rounded-3xl mt-10 mx-auto">
-              Résumé
+            className="inline-block bg-white text-black font-bold px-5 py-2.5 rounded-3xl mt-10 mx-auto group">
+              <span className="flex flex-col overflow-hidden h-[24px]">
+                <span className="transition ease-in-out delay-100 group-hover:-translate-y-full">Résumé</span>
+                <span className="transition ease-in-out delay-100 group-hover:-translate-y-full text-primary">Résumé</span>
+              </span>
             </a>
         </div>
     </main>

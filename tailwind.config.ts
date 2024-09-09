@@ -29,6 +29,15 @@ const config: Config = {
         sans: ['var(--font-montserrat)'],
         montez: ['var(--font-montez)']
       },
+      animation: {
+        slide: "slide .2s linear forwards",
+      },
+      keyframes: {
+        slide: {
+          "0%": { transform: "translateY(0)"},
+          "100%": { transform: "translateY(-100%)"},
+        },
+      },
     },
   },
   plugins: [],

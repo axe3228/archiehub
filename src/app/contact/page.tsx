@@ -11,6 +11,7 @@ const Contact = () => {
         message: '',
     });
     const [status, setStatus] = useState('');
+    const animationSlideUp = "transition ease-in-out delay-100 group-hover:-translate-y-full"
 
     const handleChange = (e: any) => {
         setFormData({
@@ -66,7 +67,7 @@ const Contact = () => {
             />
           </div>
           <p className="md:ml-2.5 md:text-left text-center">mail me at 
-            <span className="block text-primary">archiehabradas3228@gmail.com</span>
+            <a href="mailto:archiehabradas3228@gmail.com" className="block text-primary">archiehabradas3228@gmail.com</a>
           </p>
         </div>
       </div>
@@ -110,7 +111,12 @@ const Contact = () => {
             placeholder="Message"
             className="text-black px-2 p-2 rounded"
           />
-          <button type="submit" className="bg-white text-black p-3 font-bold hover:bg-primary hover:text-white">Send Message</button>
+          <button type="submit" className="bg-white text-black p-3 font-bold hover:bg-primary hover:text-white group">
+            <span className="flex flex-col overflow-hidden h-[24px]">
+              <span className={animationSlideUp}>Send Message</span>
+              <span className={animationSlideUp}>Send Message</span>
+            </span>
+          </button>
         </form>
         {status && <p>{status}</p>}
       </div>
