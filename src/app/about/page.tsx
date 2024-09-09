@@ -77,6 +77,7 @@ const About = () => {
                         <Badge title='HEROKU' src='/icons/about/heroku.png' bgc='bg-[#430098]'/>
                         <Badge title='FIREBASE' src='/icons/about/firebase.png' bgc='bg-[#0718AC]'/>
                         <Badge title='MYSQL' src='/icons/about/mysql.png' bgc='bg-[#D16400]'/>
+                        <Badge title='GraphQL' src='/icons/about/graphql.png' bgc='bg-[#e535ab]'/>
                         <Badge title='GIT' src='/icons/about/devicon_git.png' bgc='bg-[#F05033]'/>
                     </div>
                 </div>

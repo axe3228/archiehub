@@ -10,7 +10,7 @@ export default function Home() {
             </div>
             <a href="https://docs.google.com/document/d/1boujWVDvDs20n-3M0_d_Gy2gscNFxuzeQt5OjL8cPr0/edit?usp=sharing" target="_blank"
             className="inline-block bg-white text-black font-bold px-5 py-2.5 rounded-3xl mt-10 mx-auto">
-              Curriculum Vitae
+              Résumé
             </a>
         </div>
     </main>
