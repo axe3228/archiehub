@@ -28,7 +28,6 @@ const project = () => {
 
     return (
         <div className="pt-8 pb-5 px-6">
-            <h1 className="font-montez text-[45px] mb-5">Big projects that i participated:</h1>
             <div className="flex flex-wrap justify-evenly">
                 <Card image="/images/projects/harmony-web.png" title="Harmony Web" desc="@ Cogitate (2024)" 
                 url="https://harmonyschoolsonlinestore.com/district-office/central-office" />

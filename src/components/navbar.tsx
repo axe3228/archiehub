@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const Navbar = () => {
     const pathname = usePathname()
-    const liClass = "font-medium hover:text-light-violet"
+    const liClass = "font-medium hover:text-primary"
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     return (
@@ -30,34 +30,34 @@ const Navbar = () => {
                 />
             </button>
             <ul className="md:flex hidden space-x-8">
-                <li className={`${liClass} ${pathname === HOME_PAGE ? 'text-light-violet' : 'white'}`}>
+                <li className={`${liClass} ${pathname === HOME_PAGE ? 'text-primary' : 'white'}`}>
                     <a href={HOME_PAGE}>Home</a>
                 </li>
-                <li className={`${liClass} ${pathname === ABOUT_PAGE ? 'text-light-violet' : 'white'}`}>
+                <li className={`${liClass} ${pathname === ABOUT_PAGE ? 'text-primary' : 'white'}`}>
                     <a href={ABOUT_PAGE}>About</a>
                 </li>
-                <li className={`${liClass} ${pathname === PROJECTS_PAGE ? 'text-light-violet' : 'white'}`}>
+                <li className={`${liClass} ${pathname === PROJECTS_PAGE ? 'text-primary' : 'white'}`}>
                     <a href={PROJECTS_PAGE}>Projects</a>
                 </li>
-                <li className={`${liClass} ${pathname === CONTACT_ME_PAGE ? 'text-light-violet' : 'white'}`}>
+                <li className={`${liClass} ${pathname === CONTACT_ME_PAGE ? 'text-primary' : 'white'}`}>
                     <a href={CONTACT_ME_PAGE}>Contact Me</a>
                 </li>
             </ul>
 
             <ul className={`${isOpen ? 'md:hidden flex' : 'hidden'} flex-col absolute bottom-[-181px] left-0 w-full bg-black`}>
-                <li className={`${liClass} ${pathname === HOME_PAGE ? 'text-light-violet' : 'white'} 
+                <li className={`${liClass} ${pathname === HOME_PAGE ? 'text-primary' : 'white'} 
                 border-b py-2.5 px-6`}>
                     <a href={HOME_PAGE}>Home</a>
                 </li>
-                <li className={`${liClass} ${pathname === ABOUT_PAGE ? 'text-light-violet' : 'white'} 
+                <li className={`${liClass} ${pathname === ABOUT_PAGE ? 'text-primary' : 'white'} 
                 border-b py-2.5 px-6`}>
                     <a href={ABOUT_PAGE}>About</a>
                 </li>
-                <li className={`${liClass} ${pathname === PROJECTS_PAGE ? 'text-light-violet' : 'white'} 
+                <li className={`${liClass} ${pathname === PROJECTS_PAGE ? 'text-primary' : 'white'} 
                 border-b py-2.5 px-6`}>
                     <a href={PROJECTS_PAGE}>Projects</a>
                 </li>
-                <li className={`${liClass} ${pathname === CONTACT_ME_PAGE ? 'text-light-violet' : 'white'} 
+                <li className={`${liClass} ${pathname === CONTACT_ME_PAGE ? 'text-primary' : 'white'} 
                 border-b py-2.5 px-6`}>
                     <a href={CONTACT_ME_PAGE}>Contact Me</a>
                 </li>

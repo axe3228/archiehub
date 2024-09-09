@@ -66,7 +66,7 @@ const Contact = () => {
             />
           </div>
           <p className="md:ml-2.5 md:text-left text-center">mail me at 
-            <span className="block text-light-violet">archiehabradas3228@gmail.com</span>
+            <span className="block text-primary">archiehabradas3228@gmail.com</span>
           </p>
         </div>
       </div>
@@ -110,7 +110,7 @@ const Contact = () => {
             placeholder="Message"
             className="text-black px-2 p-2 rounded"
           />
-          <button type="submit" className="bg-white text-black p-3 font-bold hover:bg-light-violet hover:text-white">Send Message</button>
+          <button type="submit" className="bg-white text-black p-3 font-bold hover:bg-primary hover:text-white">Send Message</button>
         </form>
         {status && <p>{status}</p>}
       </div>

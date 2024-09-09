@@ -16,7 +16,7 @@ const config: Config = {
     },
     colors: {
       ...colors,
-      'light-violet': '#CF9FFF',
+      'primary': '#FF520E',
       'crystal-white': '#eeeeff33'
     },
     extend: {
