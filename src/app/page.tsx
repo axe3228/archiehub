@@ -8,11 +8,11 @@ export default function Home() {
             <p className="md:text-[24px] max-w-[700px] text-center">a passionate and dedicated web developer that can make 
             your ideal website come to life.</p>
             </div>
-            <a href="https://docs.google.com/document/d/1boujWVDvDs20n-3M0_d_Gy2gscNFxuzeQt5OjL8cPr0/edit?usp=sharing" target="_blank"
+            <a href="https://docs.google.com/document/d/1-KYkhB8_qQdamftf3Y5BqHt3NcE_uxj3gEVz6_gMTto/edit?usp=sharing" target="_blank"
             className="inline-block bg-white text-black font-bold px-5 py-2.5 rounded-3xl mt-10 mx-auto group">
               <span className="flex flex-col overflow-hidden h-[24px]">
-                <span className="transition ease-in-out delay-100 group-hover:-translate-y-full">Résumé</span>
-                <span className="transition ease-in-out delay-100 group-hover:-translate-y-full text-primary">Résumé</span>
+                <span className="transition ease-in-out delay-100 group-hover:-translate-y-full">Curriculum Vitae</span>
+                <span className="transition ease-in-out delay-100 group-hover:-translate-y-full text-primary">Curriculum Vitae</span>
               </span>
             </a>
         </div>

@@ -35,9 +35,9 @@ const project = () => {
                 <Card image="/images/projects/hts-tech.png" title="HTS Tech" desc="@ Cogitate (2024)" url="" />
                 <Card image="/images/projects/simple-waste.png" title="Onboarding Portal" desc="@ Cogitate (2023)" url="https://simplewaste.com/" />
                 <Card image="/images/projects/cogitate.png" title="Cogitate" desc="@ Cogitate (2023)" url="https://www.cogitate.io/" />
+                <Card image="/images/projects/negum-tempo-jp.png" title="Negum Tempo" desc="@ Grow Forward JP Inc. (2022)" url="https://negum-tenpo.com/" />
                 <Card image="/images/projects/growforwardjp.png" title="Grow Forward JP Inc." desc="@ Grow Forward JP Inc. (2021)" url="https://growforwardjp.com/" />
                 <Card image="/images/projects/negumjp.png" title="Negum" desc="@ Grow Forward JP Inc. (2021)" url="https://negum-jp.com/" />
-                <Card image="/images/projects/negum-tempo-jp.png" title="Negum Tempo" desc="@ Grow Forward JP Inc. (2021)" url="https://negum-tenpo.com/" />
             </div>
         </div>
     );
