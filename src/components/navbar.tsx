@@ -61,19 +61,19 @@ const Navbar = () => {
             <ul className={`${isOpen ? 'md:hidden flex' : 'hidden'} flex-col absolute bottom-[-181px] left-0 w-full bg-black`}>
                 <li className={`${liClass} ${pathname === HOME_PAGE ? 'text-primary' : 'white'} 
                 border-b py-2.5 px-6`}>
-                    <Link href={HOME_PAGE}>Home</Link>
+                    <Link href={HOME_PAGE} onClick={() => setIsOpen(!isOpen)}>Home</Link>
                 </li>
                 <li className={`${liClass} ${pathname === ABOUT_PAGE ? 'text-primary' : 'white'} 
                 border-b py-2.5 px-6`}>
-                    <Link href={ABOUT_PAGE}>About</Link>
+                    <Link href={ABOUT_PAGE} onClick={() => setIsOpen(!isOpen)}>About</Link>
                 </li>
                 <li className={`${liClass} ${pathname === PROJECTS_PAGE ? 'text-primary' : 'white'} 
                 border-b py-2.5 px-6`}>
-                    <Link href={PROJECTS_PAGE}>Projects</Link>
+                    <Link href={PROJECTS_PAGE} onClick={() => setIsOpen(!isOpen)}>Projects</Link>
                 </li>
                 <li className={`${liClass} ${pathname === CONTACT_ME_PAGE ? 'text-primary' : 'white'} 
                 border-b py-2.5 px-6`}>
-                    <Link href={CONTACT_ME_PAGE}>Contact Me</Link>
+                    <Link href={CONTACT_ME_PAGE} onClick={() => setIsOpen(!isOpen)}>Contact Me</Link>
                 </li>
             </ul>
         </nav>

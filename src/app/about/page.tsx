@@ -23,15 +23,13 @@ const About = () => {
 
     return (
         <div className="flex md:flex-row flex-col justify-center md:items-start items-center grow md:pt-10 pt-6 pb-10 md:px-0 px-6">
-            <div className="w-max md:mr-8 mb-6">
-                <Image
+            <Image
                 src={"/images/archie.jpg"}
                 alt={"archie"}
                 width={500}
                 height={1000}
-                className="rounded-lg"
-                />
-            </div>
+                className="rounded-lg md:mr-8 mb-6"
+            />
             <div className="md:w-[54%]">
                 <div className="space-y-3">
                     <p className="font-bold">Greetings! I&#39;m Archie Habaradas, 
