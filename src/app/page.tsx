@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="flex flex-col justify-center items-center h-full grow px-6">
-      <div className="flex flex-col md:items-start items-center justify-center">
+      <div className="flex flex-col md:items-start items-center justify-center cursor-default">
           <p className="font-montez text-[45px]">Hello There!</p>
           <div className="md:px-10">
             <h2 className="md:text-[60px] text-[32px] font-bold text-center">I&#39;m Archie Habaradas,</h2>
