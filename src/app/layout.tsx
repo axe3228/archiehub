@@ -31,10 +31,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${montserrat.variable} ${montez.variable} font-sans`}>
         <Glow />
-        <div className="max-w-[1440px] min-h-screen mx-auto md:px-10
-        flex flex-col justify-between">
+        <div className="min-h-screen flex flex-col justify-between">
           <Navbar />
-          {children}
+          <div className="max-w-[1440px] mx-auto md:px-10">
+            {children}
+          </div>
           <Footer />
         </div>
       </body>
