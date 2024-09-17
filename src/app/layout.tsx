@@ -3,6 +3,7 @@ import { Montserrat, Montez } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { Glow } from "@/components/glow";
 
 const montserrat = Montserrat({ 
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.variable} ${montez.variable} font-sans`}>
+        <Glow />
         <div className="max-w-[1440px] min-h-screen mx-auto md:px-10
         flex flex-col justify-between">
           <Navbar />

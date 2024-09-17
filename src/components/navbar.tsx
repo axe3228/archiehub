@@ -12,7 +12,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     return (
-        <nav className="flex justify-between items-center w-full py-5 sticky top-0 bg-black shadow-md z-50 relative
+        <nav className="flex justify-between items-center w-full py-5 sticky top-0 bg-black shadow-md z-30 relative
         md:border-b-0 border-b md:px-0 px-6">
             <a href={HOME_PAGE} className="flex items-end">
                 <Image
