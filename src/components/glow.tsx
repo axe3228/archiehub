@@ -11,7 +11,7 @@ function Glow() {
     const onMouseMove = (e: MouseEvent) => {
       const x = e.clientX
       const y = e.clientY
-      ref.current!.style.background = `radial-gradient(600px at ${x}px ${y}px, rgba(3, 105, 161, 0.25), transparent 80%)`
+      ref.current!.style.background = `radial-gradient(600px at ${x}px ${y}px, rgba(255, 255, 255, 0.15), transparent 80%)`
     }
 
     if (ref.current) {
