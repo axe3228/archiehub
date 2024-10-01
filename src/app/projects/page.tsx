@@ -11,33 +11,41 @@ const project = () => {
     }
 
     const CardLink = ({image, title, desc, url}: CardProps) => (
-        <Link href={url ?? ''} target={`${url && "_blank"}`} className="md:w-[44%] w-full mb-10 flex">
-            <div className="border border-white/[0.17] p-8 rounded-lg 
+        <Link href={url ?? ''} target={`${url && "_blank"}`} className="md:w-[44%] w-full mb-10 flex
+        transform transition duration-200 hover:scale-110">
+            <div className="border border-white/[0.17] rounded-lg 
             bg-white/[0.08]">
                 <Image
                     src={image}
                     alt={title}
                     width={600}
                     height={200}
+                    className="rounded-t-lg"
                 />
-                <p className="mt-4 font-bold">{title}</p>
-                <p className="text-[14px]">{desc}</p>
+                <div className="mt-4 pl-8 pr-8 pb-8">
+                    <p className="font-bold">{title}</p>
+                    <p className="text-[14px]">{desc}</p>
+                </div>
             </div>
         </Link>
     )
 
     const Card = ({image, title, desc}: CardProps) => (
-        <div className="md:w-[44%] w-full mb-10 flex">
-            <div className="border border-white/[0.17] p-8 rounded-lg 
+        <div className="md:w-[44%] w-full mb-10 flex transform transition duration-200 
+            hover:scale-110">
+            <div className="border border-white/[0.17] rounded-lg 
             bg-white/[0.08]">
                 <Image
                     src={image}
                     alt={title}
                     width={600}
                     height={200}
+                    className="rounded-t-lg"
                 />
-                <p className="mt-4 font-bold">{title}</p>
-                <p className="text-[14px]">{desc}</p>
+                <div className="mt-4 pl-8 pr-8 pb-8">
+                    <p className="font-bold">{title}</p>
+                    <p className="text-[14px]">{desc}</p>
+                </div>
             </div>
         </div>
     )
