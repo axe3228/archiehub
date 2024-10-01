@@ -12,7 +12,7 @@ const project = () => {
 
     const CardLink = ({image, title, desc, url}: CardProps) => (
         <Link href={url ?? ''} target={`${url && "_blank"}`} className="md:w-[44%] w-full mb-10 flex
-        transform transition duration-200 hover:scale-110">
+        transform transition duration-200 md:hover:scale-110">
             <div className="border border-white/[0.17] rounded-lg 
             bg-white/[0.08]">
                 <Image
@@ -32,7 +32,7 @@ const project = () => {
 
     const Card = ({image, title, desc}: CardProps) => (
         <div className="md:w-[44%] w-full mb-10 flex transform transition duration-200 
-            hover:scale-110">
+            md:hover:scale-110">
             <div className="border border-white/[0.17] rounded-lg 
             bg-white/[0.08]">
                 <Image
