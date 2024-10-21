@@ -1,16 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Projects } from '@/constants/projects'
 
 const project = () => {
 
     interface CardProps {
         image: string;
         title: string;
+        company: string;
         desc: string;
         url?: string;
     }
 
-    const CardLink = ({image, title, desc, url}: CardProps) => (
+    const CardLink = ({image, title, company, desc, url}: CardProps) => (
         <Link href={url ?? ''} target={`${url && "_blank"}`} className="md:w-[44%] w-full mb-10 flex
         transform transition duration-200 md:hover:scale-110">
             <div className="border border-white/[0.17] rounded-lg 
@@ -22,15 +24,16 @@ const project = () => {
                     height={200}
                     className="rounded-t-lg"
                 />
-                <div className="mt-4 pl-8 pr-8 pb-8">
+                <div className="mt-4 px-5 pb-5">
                     <p className="font-bold">{title}</p>
-                    <p className="text-[14px]">{desc}</p>
+                    <p className="text-[12px] my-1">{company}</p>
+                    <p className="text-[12px] opacity-70">{desc}</p>
                 </div>
             </div>
         </Link>
     )
 
-    const Card = ({image, title, desc}: CardProps) => (
+    const Card = ({image, title, company, desc}: CardProps) => (
         <div className="md:w-[44%] w-full mb-10 flex transform transition duration-200 
             md:hover:scale-110">
             <div className="border border-white/[0.17] rounded-lg 
@@ -42,9 +45,10 @@ const project = () => {
                     height={200}
                     className="rounded-t-lg"
                 />
-                <div className="mt-4 pl-8 pr-8 pb-8">
+                <div className="mt-4 px-5 pb-5">
                     <p className="font-bold">{title}</p>
-                    <p className="text-[14px]">{desc}</p>
+                    <p className="text-[12px] my-1">{company}</p>
+                    <p className="text-[12px] opacity-70">{desc}</p>
                 </div>
             </div>
         </div>
@@ -53,15 +57,31 @@ const project = () => {
     return (
         <div className="pt-8 pb-5 px-6">
             <div className="flex flex-wrap justify-evenly">
-                <CardLink image="/images/projects/harmony-web.png" title="Harmony Web" desc="@ Cogitate (2024)" 
-                url="https://harmonyschoolsonlinestore.com/district-office/central-office" />
-                <CardLink image="/images/projects/partnersync-hub.png" title="Partner Sync Hub" desc="@ Cogitate (2024)" url="https://simplewaste.com/" />
-                <Card image="/images/projects/hts-tech.png" title="HTS Tech" desc="@ Cogitate (2024)" />
-                <CardLink image="/images/projects/simple-waste.png" title="Onboarding Portal" desc="@ Cogitate (2023)" url="https://simplewaste.com/" />
-                <CardLink image="/images/projects/cogitate.png" title="Cogitate" desc="@ Cogitate (2023)" url="https://www.cogitate.io/" />
-                <CardLink image="/images/projects/negum-tempo-jp.png" title="Negum Tempo" desc="@ Grow Forward JP Inc. (2022)" url="https://negum-tenpo.com/" />
-                <CardLink image="/images/projects/growforwardjp.png" title="Grow Forward JP Inc." desc="@ Grow Forward JP Inc. (2021)" url="https://growforwardjp.com/" />
-                <CardLink image="/images/projects/negumjp.png" title="Negum" desc="@ Grow Forward JP Inc. (2021)" url="https://negum-jp.com/" />
+                {
+                    Projects.map((project: any) => {
+                        if (project.haveLink) {
+                            return (
+                                <CardLink
+                                key={project.id}
+                                image={project.image}
+                                title={project.title} 
+                                url={project.url}
+                                company={project.company}
+                                desc={project.desc} />
+                            );
+                        } else {
+                            return (
+                                <Card
+                                key={project.id}
+                                image={project.image}
+                                title={project.title} 
+                                url={project.url}
+                                company={project.company}
+                                desc={project.desc} />
+                            );
+                        }
+                    })
+                }
             </div>
         </div>
     );

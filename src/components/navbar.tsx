@@ -28,8 +28,8 @@ const Navbar = () => {
                     <Image
                         src={"/icons/hamburger.png"}
                         alt={"burger menu"}
-                        width={32}
-                        height={32}
+                        width={24}
+                        height={24}
                     />
                 </button>
                 <ul className="md:flex hidden space-x-8">
